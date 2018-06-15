@@ -41,7 +41,7 @@ function gethitokoto(){
             write(result.hitokoto);
         },
         error:function(){
-            write("Error: Failed to get hitokoto.");
+            $('#hitokoto').html("Error: Failed to get hitokoto.");
         }
     });
 }
