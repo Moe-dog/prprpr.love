@@ -18,7 +18,7 @@ function getAchives(){
     t = ``;
     $.ajax({
         type:"GET",
-        url:"https://www.fczbl.vip/wp-json/wp/v2/posts?per_page=8&page=1",
+        url:"https://moedog.org/wp-json/wp/v2/posts?per_page=8&page=1",
         dataType:"json",
         success:function(json){
             for(var i = 0;i < json.length;i++){
@@ -53,6 +53,28 @@ function write(text){
         gethitokoto();
     }
 }
+
+$(function(){
+    $.ajax({
+        url:"https://api.fczbl.vip/163/?type=playlist&id=2003373695",
+        success:function(e){
+            var a = new APlayer({
+                element:document.getElementById("ap-f"),
+                autoplay:false,
+                fixed:true,
+                loop:"all",
+                order:"list",
+                listFolded:true,
+                showlrc:3,
+                theme:"#e6d0b2",
+                listmaxheight:"200px",
+                music:eval(e)
+            });
+            window.aplayers || (window.aplayers = []),
+            window.aplayers.push(a)
+        }
+    })
+})
 
 // 对Date的扩展，将 Date 转化为指定格式的String
 // 月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符， 

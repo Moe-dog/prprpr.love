@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>犬の窝</title>
+    <title>犬</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -10,11 +10,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="keywords" content="Moedog,狗子,主页">
     <meta name="description" content="狗子的个人主页">
-    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/css/main.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/js/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/js/aplayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/js/aplayer.min.js"></script>
   </head>
   <body>
     <div class="loading">
@@ -27,14 +27,14 @@
         </div>
     </div>
     <script>
-        var picnum = parseInt(Math.random()*20+1);
-        document.write('<div class="bak" style="background-image: url(https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/img/'+picnum+'.jpg);"></div>');
+        var picnum = parseInt(Math.random()*19+1);
+        document.write('<div class="bak" style="background-image: url(https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/img/'+picnum+'.jpg);"></div>');
     </script>
     <main>
         <div class="content">
             <div class="left">
                 <div class="avatar">
-                    <img src="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/img/head.png">
+                    <img src="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/img/head.png">
                 </div>
                 <ul class="menu">
                     <li>
@@ -61,7 +61,7 @@
                 <section id="home" class="active">
                     <h1>小白-白</h1>
                     <div class="items">
-                        <a href="https://www.fczbl.vip" rel="noopener">
+                        <a href="https://moedog.org" target="_blank" rel="noopener">
                             <i class="fa fa-home"></i>
                             <span>Blog</span>
                         </a>
@@ -98,14 +98,14 @@
                     <p>
                         我，小白-白，是一只菜狗<br>
                         学生狗 / 没啥特长 / 宅 / <del>变态</del>loli控 / 2.5次元 / 萌物( ? ? )<br>
-                        こいぬちゃん赛高 ! / 瞎折腾 / 搞事情 / <a href="https://www.fczbl.vip/about.html" target="_blank">More...</a>
+                        こいぬちゃん赛高 ! / 瞎折腾 / 搞事情 / <a href="https://moedog.org/about.html" target="_blank">More...</a>
                     </p>
                 </section>
                 <section id="donate">
                     <h1>求投食喵 !</h1>
                     <div class="donate-img-box">
                         <a href="https://pay.fczbl.vip" target="_blank" rel="noopener">
-                            <img src="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/img/poor.jpg" >
+                            <img src="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/img/poor.jpg" >
                         </a>
                     </div>
                 </section>
@@ -121,31 +121,8 @@
         </footer>
         <div class="aplayer-footer">
             <div class="ap-f" id="ap-f"></div>
-            <script>
-                $(function(){
-                    $.ajax({
-                        url:"https://api.fczbl.vip/163/?type=playlist&id=2003373695",
-                        success:function(e){
-                            var a = new APlayer({
-                                element:document.getElementById("ap-f"),
-                                autoplay:false,
-                                fixed:true,
-                                loop:"all",
-                                order:"list",
-                                listFolded:true,
-                                showlrc:3,
-                                theme:"#e6d0b2",
-                                listmaxheight:"200px",
-                                music:eval(e)
-                            });
-                            window.aplayers || (window.aplayers = []),
-                            window.aplayers.push(a)
-                        }
-                    })
-                })
-            </script>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/gh/Moe-Dog/Moe-Dog.github.io@0.4/statics/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Moe-dog/prprpr.love@0.5/statics/js/main.js"></script>
   </body>
 </html>
