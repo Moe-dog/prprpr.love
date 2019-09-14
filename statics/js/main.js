@@ -56,7 +56,7 @@ function write(text){
 
 $(function(){
     $.ajax({
-        url:"https://api.fczbl.vip/163/?type=playlist&id=2003373695",
+        url:"https://api.fczbl.vip/163_sp/?type=playlist&id=2003373695",
         success:function(e){
             var a = new APlayer({
                 element:document.getElementById("ap-f"),
